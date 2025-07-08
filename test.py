@@ -5,3 +5,6 @@ def test_sum():
 
 def test_sub():
     assert sub(1,1) == 0
+
+def test_mult():
+    assert multiply(3,3) == 9
