@@ -2,7 +2,8 @@ name: Run Tests
 
 on:
   push:
-    branches: [ * ]
+    branches: 
+      - '**'    # Matches all branches (not "*")
 
 jobs:
   setup-env:
