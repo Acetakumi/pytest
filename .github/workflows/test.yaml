@@ -26,3 +26,10 @@ jobs:
     - name: Run Tests
       run: |
         pytest test.py
+    
+    - name: Comment test coverage
+      uses: itsparser/covreport@v1
+      env:
+        path: coverage/lcov.info
+        title: "Test Coverage"
+        threshold: 80
